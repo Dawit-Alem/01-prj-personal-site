@@ -9,7 +9,8 @@ body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: #f8fafc;
   color: #0f172a;
-  line-height: 1.6;
+  line-height: 1.35;
+  font-size: 7.5px;
 }
 
 a {
@@ -18,21 +19,38 @@ a {
 }
 
 .page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem 3rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.big-card {
+  background: #ffffff;
+  border-radius: 0;
+  padding: 1.4rem 1rem 1.9rem;
+  box-shadow: none;
+}
+
+.big-card > section {
+  margin-top: 1.25rem;
+}
+
+.big-card > section:first-of-type {
+  margin-top: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .navbar a {
   color: #0f172a;
   font-weight: 600;
+  font-size: 0.5625rem;
   transition: color 0.2s ease;
 }
 
@@ -41,93 +59,157 @@ a {
 }
 
 .hero {
-  background: linear-gradient(180deg, #1e3a8a 0%, #0f172a 100%);
+  position: relative;
+  width: 100%;
+  background: transparent;
   color: #f8fafc;
-  border-radius: 1.5rem;
-  padding: 3rem 1.5rem;
+  border-radius: 0;
+  padding: 2.1rem 1.15rem;
   text-align: center;
   box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('img/hero-bg.jpg') center/cover no-repeat;
+  filter: blur(4px);
+  transform: scale(1.05);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 78, 59, 0.55) 0%, rgba(15, 23, 42, 0.75) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-card {
+  position: relative;
+  z-index: 2;
   display: grid;
-  gap: 1rem;
+  gap: 0.7rem;
   align-items: center;
+  justify-items: center;
 }
 
 .profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid rgba(255, 255, 255, 0.35);
   margin: 0 auto;
-}
+  filter: brightness(0.75);}
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 1.15625rem;
   margin: 0;
 }
 
 .hero-subtitle {
   color: #bae6fd;
   font-weight: 600;
+  font-size: 0.55rem;
 }
 
 .hero-text {
-  max-width: 560px;
+  max-width: 520px;
   margin: 0 auto;
   color: #dbeafe;
+  font-size: 0.53125rem;
 }
 
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #38bdf8;
-  color: #0f172a;
+  background: #16a34a;
+  color: #f8fafc;
   border-radius: 999px;
-  padding: 0.95rem 2rem;
+  padding: 0.6rem 1rem;
   font-weight: 700;
-  box-shadow: 0 14px 30px rgba(56, 189, 248, 0.18);
+  box-shadow: 0 14px 30px rgba(22, 163, 74, 0.18);
+  min-width: 0;
+  max-width: 180px;
 }
 
 .card {
   background: #ffffff;
   border-radius: 1.5rem;
-  padding: 2rem;
-  margin-top: 1.5rem;
+  padding: 1.6rem;
+  margin-top: 1.25rem;
   box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
 }
 
-.card h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.section-block h2 {
+  font-size: 0.78125rem;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 
-.card p {
-  max-width: 680px;
+.section-block p {
+  max-width: 620px;
   margin: 0 auto;
   color: #475569;
+  text-align: center;
+  font-size: 0.5625rem;
+}
+
+.portfolio-card {
   text-align: center;
 }
 
 .project-grid {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  gap: 0.85rem;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
 }
 
 .project-item {
+  flex: 0 0 260px;
+}
+
+.project-item h3 {
+  margin: 0.65rem 0 0.45rem;
+  font-size: 0.59375rem;
+}
+
+.project-item p {
+  font-size: 0.55rem;
+  margin: 0;
+}
+
+.skill-item p {
+  margin: 0;
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.55rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #f8fafc;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.9rem;
   text-align: center;
   transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
 }
 
 .project-item:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 
 .project-image {
@@ -135,8 +217,9 @@ a {
   border-radius: 1rem;
   height: auto;
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
   object-fit: cover;
+  text-align: center;
 }
 
 .skill-list span {
@@ -146,35 +229,35 @@ a {
 }
 
 .project-item img.project-image {
-  max-height: 180px;
+  max-height: 150px;
   width: 100%;
 }
 
-.full-width {
-  grid-column: 1 / -1;
-}
 
 .skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
   margin-top: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
 }
 
 .skill-item {
   display: grid;
-  gap: 0.75rem;
+  gap: 0.55rem;
   align-items: center;
   text-align: center;
   background: #f8fafc;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.75rem;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  min-width: 100px;
 }
 
 .skill-item img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   margin: 0 auto;
 }
@@ -189,6 +272,10 @@ a {
   margin-bottom: 0.75rem;
 }
 
+.section-block {
+  padding-top: 1.4rem;
+}
+
 @media (min-width: 700px) {
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -197,15 +284,15 @@ a {
 
 @media (max-width: 640px) {
   .page {
-    padding: 1.5rem 1rem 2rem;
+    padding: 1.3rem 0.9rem 1.8rem;
   }
 
   .hero {
-    padding: 2.5rem 1.25rem;
+    padding: 2rem 1.1rem;
   }
 
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 1.25rem;
   }
 
   .button {
