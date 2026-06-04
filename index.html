@@ -2,10 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawit Alem — Personal Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <main class="page">
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-card">
+        <img class="profile-photo" src="img/me.JPG" alt="Dawit Alem profile photo">
+        <h1>Dawit Alem</h1>
+        <p class="hero-subtitle">Computer Science Student • Web Developer • Problem Solver</p>
+        <p class="hero-text">I build clean, responsive websites and enjoy solving real-world problems through code.</p>
+        <a href="#portfolio" class="button">Explore My Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="card about-card">
+      <h2>About Me</h2>
+      <p>I'm a Computer Science student at the University of Maryland with an interest in web development, software engineering, and AI. I enjoy building practical applications and continuously improving my programming skills through projects and coursework.</p>
+    </section>
+
+    <section id="portfolio" class="card portfolio-card">
+      <h2>Portfolio</h2>
+      <div class="project-grid">
+        <article class="project-item">
+          <img class="project-image" src="img/weather dashboard.png" alt="Weather Dashboard screenshot">
+          <h3>Weather Dashboard</h3>
+          <p>Built a weather application using JavaScript and APIs to display real-time forecasts.</p>
+        </article>
+        <article class="project-item">
+          <img class="project-image" src="img/course tracker.png" alt="Course Registration Tracker screenshot">
+          <h3>Course Registration Tracker</h3>
+          <p>A tool that helps students monitor course availability and registration updates.</p>
+        </article>
+        <article class="project-item full-width">
+          <div class="project-image">Portfolio</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>A responsive portfolio built with HTML and CSS showcasing my projects and skills.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="card skills-card">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-item">
+          <img src="img/html5_23329.png" alt="HTML icon">
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/file_type_css_icon_130661.png" alt="CSS icon">
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/file_type_js_official_icon_130509.png" alt="JavaScript icon">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/java_original_wordmark_logo_icon_146459.png" alt="Java icon">
+          <p>Java</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/python_vertical_logo_icon_168039.png" alt="Python icon">
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/file_type_git_icon_130581.png" alt="Git icon">
+          <p>Git</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/268114_brainstorming-insight-icon.png" alt="Problem Solving icon">
+          <p>Problem Solving</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card education-card">
+      <h2>Education</h2>
+      <p>University of Maryland<br>
+      B.S. Computer Science<br>
+      Expected Graduation: 2028</p>
+    </section>
+
+    <section id="contact" class="card contact-card">
+      <h2>Contact Me</h2>
+      <p>Email: dalem1@terpmail.umd.edu</p>
+      <p><a href="https://www.linkedin.com/in/dawit-alem-a709b9300/" target="_blank">LinkedIn</a> | <a href="https://github.com/Dawit-Alem" target="_blank">GitHub</a></p>
+      <a href="mailto:dalem1@terpmail.umd.edu" class="button">Get In Touch</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Dawit Alem. Built with HTML & CSS.</p>
+  </footer>
 </body>
 </html>
