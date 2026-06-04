@@ -10,7 +10,7 @@ body {
   background: #f8fafc;
   color: #0f172a;
   line-height: 1.35;
-  font-size: 7.5px;
+  font-size: 9.375px;
 }
 
 a {
@@ -50,7 +50,7 @@ a {
 .navbar a {
   color: #0f172a;
   font-weight: 600;
-  font-size: 0.5625rem;
+  font-size: 0.703125rem;
   transition: color 0.2s ease;
 }
 
@@ -109,21 +109,21 @@ a {
   filter: brightness(0.75);}
 
 .hero h1 {
-  font-size: 1.15625rem;
+  font-size: 1.4453125rem;
   margin: 0;
 }
 
 .hero-subtitle {
   color: #bae6fd;
   font-weight: 600;
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
 }
 
 .hero-text {
   max-width: 520px;
   margin: 0 auto;
   color: #dbeafe;
-  font-size: 0.53125rem;
+  font-size: 0.6640625rem;
 }
 
 .button {
@@ -149,7 +149,7 @@ a {
 }
 
 .section-block h2 {
-  font-size: 0.78125rem;
+  font-size: 0.9765625rem;
   margin-bottom: 0.75rem;
   text-align: center;
 }
@@ -159,7 +159,7 @@ a {
   margin: 0 auto;
   color: #475569;
   text-align: center;
-  font-size: 0.5625rem;
+  font-size: 0.703125rem;
 }
 
 .portfolio-card {
@@ -180,11 +180,11 @@ a {
 
 .project-item h3 {
   margin: 0.65rem 0 0.45rem;
-  font-size: 0.59375rem;
+  font-size: 0.7421875rem;
 }
 
 .project-item p {
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   margin: 0;
 }
 
@@ -192,7 +192,7 @@ a {
   margin: 0;
   font-weight: 700;
   color: #0f172a;
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
 }
 
 .project-item {
@@ -292,7 +292,7 @@ a {
   }
 
   .hero h1 {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
   }
 
   .button {
